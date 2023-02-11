@@ -1,38 +1,204 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.headerWrapper{
+  max-width: 100%;
+  height: 80px;
+  background-color: #fff;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.active{
+  background-color: #e5c511;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+}
+.headerContainer{
+  max-width: 1200px;
+  margin: auto;
+  height: 100%;
+}
+.producWrapper{
+  max-width: 1200px;
+  height: auto;
+  margin:15px auto;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card{
+  width: 285px;
+  height: 300px;
+  background-color: #e8e8ee;
+  border-radius: 20px;
+}
+.card:hover{
+  transform: scale(1.06);
+}
+.flag{
+  width: 50px;
+  height: 30px;
+  background-color: #e5c511;
+  border-top-left-radius: 10px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.flag:hover{
+  background-color: yellow;
+  color: black;
+}
+.cardImage{
+  width: 100%;
+  height: 70%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.cardImage img{
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cardText{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.circle{
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.cartWrapper{
+  max-width: 1200px;
+  height: auto;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+.cartContainer{
+  flex: .65;
+  height: auto;
+  text-align: start;
+}
+aside{
+  flex: .3;
+  height: auto;
+}
+.innerAside{
+  width: 100%;
+  height: auto;
+  background-color: aqua;
+}
+.totalWrapper{
+  width: 300px;
+  position:fixed;
+  top: 14%;
+  height: auto;
+  background-color: #e8e8ee;
+  border-radius: 5px;
+  padding-top: 15px;
+  padding: 15px 15px 0 15px;
+}
+.cart{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+.cartImage{
+  flex: .3;
+  background-color: #e8e8ee;
+  border-radius: 5px;
+  height: 120px;
+  padding: 5px 0;
+}
+.cartImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.cartDetailsWrapper{
+  flex: .6;
+  height: auto;
+}
+.cartName,.cartBtnWrapper{
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cartName span{
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.cartName span:hover{
+  color: red;
+}
+.cartBtnWrapper button{
+  outline: none;
+  cursor: pointer;
+  padding: 5px 15px;
+  border: none;
+}
+.cartBtnWrapper button:hover{
+  background-color: #e5c511;
+  border: none;
+  color: #fff;
+}
+.btnWrapper{
+  display: flex;
+  border: 1px solid #ddd;
+}
+.cartBtnWrapper span{
+  display: block;
+  padding: 4px 15px;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+.total{
+  width: 90%;
+  margin: auto;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin-bottom: 15px;
+}
+.checkout button{
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  cursor: pointer;
+  border:none;
+  outline: none;
+  background-color: #e5c511;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.checkout button:hover{
+  color: black;
+  background-color: yellow;
 }
